@@ -1,5 +1,12 @@
-import '../style/index.css'
+import Layout from '../componentes/Layout'
+import 'bootstrap/dist/css/bootstrap.min.css'
 
-export default function MyApp({ Component, pageProps }) {
-  return <Component {...pageProps} />
+function MyApp({ Component, pageProps }) {
+  return (
+    <Layout>
+      <Component {...pageProps} />
+    </Layout>
+  )
 }
+
+export default MyApp
